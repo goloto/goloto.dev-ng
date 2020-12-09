@@ -1,0 +1,106 @@
+ul.links {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  flex-wrap: wrap;
+
+  svg {
+    height: 50px;
+    fill: var(--main-color);
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    transition: .2s ease-in;
+
+    & > * {
+      transition: .2s ease-in;
+    }
+
+    &:hover {
+      background-color: #ddeeff;
+    }
+  }
+
+  svg.github {
+    #border {
+      fill: aliceblue;
+    }
+
+    &:hover {
+      #background {
+        fill: white;
+      }
+
+      #border {
+        fill: black;
+      }
+    }
+  }
+
+  svg.codewars {
+    #elements {
+      fill: aliceblue;
+    }
+
+    &:hover {
+      #elements {
+        fill: #b1361e;
+      }
+
+
+      #background {
+        fill: black;
+      }
+    }
+  }
+
+  svg.linked-in {
+    #border {
+      fill: aliceblue;
+    }
+
+    &:hover {
+      #symbols {
+        fill: white;
+      }
+
+      #border {
+        fill: #0077b5;
+      }
+    }
+  }
+
+  svg.telegram {
+    #background {
+      fill: aliceblue;
+    }
+
+    &:hover {
+      #logo {
+        fill: white;
+      }
+
+      #background {
+        fill: #039be5;
+      }
+    }
+  }
+
+  svg.vk {
+    #border {
+      fill: aliceblue;
+    }
+
+    &:hover {
+      #symbols {
+        fill: white;
+      }
+
+      #border {
+        fill: #5181b8;
+      }
+    }
+  }
+}
