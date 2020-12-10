@@ -1,0 +1,32 @@
+<section class="content-container">
+  <h1>Portfolio</h1>
+</section>
+
+<section class="content-container">
+  <ul class="projects">
+    <li *ngFor="let project of projects" class="project" >
+      <div class="project__date">
+        <div class="date">
+          <div class="date__start">{{project.date.start.toLocaleString('en-US', { month: 'short', year: 'numeric' })}}</div>
+          <div *ngIf="project.date.end" class="date__end"> — {{project.date.end.toLocaleString('en-US', { month: 'short', year: 'numeric' })}}</div>
+          <div *ngIf="!project.date.end" class="date__end"> — now</div>
+        </div>
+      </div>
+      <div class="project__line to-change_background">
+        <div class="circle to-change_border"></div>
+      </div>
+      <div class="project__information">
+        <ul class="tags">
+          <li *ngFor="let tag of project.tags" class="tag tag_{{tag.code}}" >{{tag.name}}</li>
+        </ul>
+        <div class="information">
+          <h2 class="name">
+            <img class="icon" src="assets/img/portfolio/{{project.code}}.ico" alt="icon of {{project.code}} site">
+            <a href="{{project.url}}" target='_blank'>{{project.name}}</a>
+          </h2>
+          <div class="tasks">{{project.tasks.sort().join()}}</div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</section>
