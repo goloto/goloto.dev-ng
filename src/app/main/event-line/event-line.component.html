@@ -1,0 +1,79 @@
+<ul class="event-list">
+
+  <li class="event">
+    <div class="description">Your company?</div>
+
+    <div class="end-line-dot end-line-dot_experience">
+      <div class="end-line-dot__top-line end-line-dot__top-line_experience"></div>
+      <div class="dot dot_experience"></div>
+      <div class="end-line-dot__bottom-line end-line-dot__bottom-line_experience"></div>
+    </div>
+
+    <div class="date">2021</div>
+
+    <div class="end-line end-line_tech">
+      <div class="end-line__top-line"></div>
+      <div class="end-line__bottom-line"></div>
+    </div>
+
+    <div class="description_empty"></div>
+  </li>
+
+  <li *ngFor="let event of eventList" class="event event_{{event.type}}">
+    <div *ngIf="event.type == 'experience'" class="description description_experience">
+      <div class="description__top-text" [innerHTML]="event.description.top"></div>
+      <div class="description__bottom-text">{{event.description.bottom}}</div>
+    </div>
+    <div *ngIf="event.type == 'tech'" class="description description_row">
+      <div class="description__empty-space"></div>
+      <div class="description__logo {{event.code}}"></div>
+    </div>
+
+    <div *ngIf="event.type == 'experience'" class="line-dot line-dot_experience">
+      <div class="line-dot__top-line line-dot__top-line_experience"></div>
+      <div class="dot dot_experience"></div>
+      <div class="line-dot__bottom-line line-dot__bottom-line_experience"></div>
+    </div>
+    <div *ngIf="event.type == 'tech'" class="line line_experience"></div>
+
+    <div class="date date-{{event.type}}">
+      <div class="date__start">{{event.date.start}}</div>
+      <div *ngIf="event.date.end" class="date__end">— {{event.date.end}}</div>
+    </div>
+
+    <div *ngIf="event.type == 'tech'" class="line-dot line-dot_tech">
+      <div class="line-dot__top-line line-dot__top-line_tech"></div>
+      <div class="dot dot_tech"></div>
+      <div class="line-dot__bottom-line line-dot__bottom-line_tech"></div>
+    </div>
+    <div *ngIf="event.type == 'experience'" class="line line_tech"></div>
+
+    <div *ngIf="event.type == 'tech'" class="description description_tech">
+      <div class="description__top-text">{{event.description.top}}</div>
+      <div class="description__bottom-text">{{event.description.bottom}}</div>
+    </div>
+    <div *ngIf="event.type == 'experience'" class="description description_row">
+      <div class="description__logo {{event.code}}"></div>
+    </div>
+  </li>
+
+  <li class="event">
+    <div class="description">Realized myself as a developer</div>
+
+    <div class="end-line-dot end-line-dot_experience">
+      <div class="end-line-dot__top-line end-line-dot__top-line_experience"></div>
+      <div class="dot dot_experience"></div>
+      <div class="end-line-dot__bottom-line end-line-dot__bottom-line_experience"></div>
+    </div>
+
+    <div class="date">0000</div>
+
+    <div class="end-line end-line_tech">
+      <div class="end-line__top-line"></div>
+      <div class="end-line__bottom-line"></div>
+    </div>
+
+    <div class="description_empty"></div>
+  </li>
+
+</ul>
