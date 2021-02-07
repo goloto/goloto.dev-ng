@@ -25,7 +25,7 @@ ul.links {
 
   svg.github {
     #border {
-      fill: aliceblue;
+      fill: var(--background-color);
     }
 
     &:hover {
@@ -41,7 +41,7 @@ ul.links {
 
   svg.codewars {
     #elements {
-      fill: aliceblue;
+      fill: var(--background-color);
     }
 
     &:hover {
@@ -58,7 +58,7 @@ ul.links {
 
   svg.linked-in {
     #border {
-      fill: aliceblue;
+      fill: var(--background-color);
     }
 
     &:hover {
@@ -74,7 +74,7 @@ ul.links {
 
   svg.telegram {
     #background {
-      fill: aliceblue;
+      fill: var(--background-color);
     }
 
     &:hover {
@@ -90,7 +90,7 @@ ul.links {
 
   svg.vk {
     #border {
-      fill: aliceblue;
+      fill: var(--background-color);
     }
 
     &:hover {
