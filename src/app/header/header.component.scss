@@ -1,9 +1,12 @@
+* {
+  transition: var(--std-transition);
+}
+
 .header {
   display: flex;
   background-color: var(--main-color);
   color: white;
   overflow-y: auto;
-  transition: background-color 0.2s ease-in;
 
   .narrow-container {
     flex-wrap: wrap;
@@ -49,7 +52,6 @@
         width: 21px;
 
         .dot_top, .dot_bottom {
-          transition: .2s ease-in;
           height: 0;
           position: absolute;
         }
@@ -94,8 +96,6 @@
       background-color: var(--main-color);
 
       &__item {
-        transition: .2s ease-in;
-
         &:hover, &:active {
           background-color: var(--second-color);
 
@@ -104,8 +104,6 @@
             opacity: 1;
 
             &__item {
-              transition: .2s ease-in;
-
               &:hover {
                 .link {
                   padding: 12px 7px;
@@ -148,19 +146,16 @@
           padding: 0 18px 0 18px;
           text-decoration: none;
           color: white;
-          transition: .2s ease-in;
 
           &__icon {
             width: 0;
             opacity: 0;
-            transition: .2s ease-in;
           }
         }
 
         .pop-up-menu {
           visibility: hidden;
           opacity: 0;
-          transition: opacity .2s ease-in, visibility .2s ease-in;
           display: flex;
           position: absolute;
           left: 0;
