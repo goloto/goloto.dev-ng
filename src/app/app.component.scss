@@ -3,4 +3,60 @@
   --second-color: rgb(113, 54, 194);
   --third-color: rgb(93, 34, 174);
   --background-color: aliceblue;
+  --std-transition: 0.2s ease-in;
+
+  animation: change-colors 300s ease-in infinite;
+
+  @keyframes change-colors {
+    0% {
+      --main-color: rgb(133, 74, 214);
+      --second-color: rgb(113, 54, 194);
+      --third-color: rgb(93, 34, 174);
+    }
+    10% {
+      --main-color: rgb(194, 2, 94);
+      --second-color: rgb(174, 0, 74);
+      --third-color: rgb(154, 0, 54);
+    }
+    20% {
+      --main-color: rgb(255, 137, 126);
+      --second-color: rgb(235, 117, 106);
+      --third-color: rgb(215, 97, 86);
+    }
+    30% {
+      --main-color: rgb(81, 135, 255);
+      --second-color: rgb(61, 115, 235);
+      --third-color: rgb(41, 95, 215);
+    }
+    40% {
+      --main-color: rgb(88, 143, 152);
+      --second-color: rgb(68, 123, 132);
+      --third-color: rgb(48, 103, 112);
+    }
+    50% {
+      --main-color: rgb(28, 93, 103);
+      --second-color: rgb(8, 73, 83);
+      --third-color: rgb(0, 53, 63);
+    }
+    60% {
+      --main-color: rgb(41, 71, 107);
+      --second-color: rgb(21, 51, 87);
+      --third-color: rgb(1, 31, 67);
+    }
+    70% {
+      --main-color: rgb(94, 109, 184);
+      --second-color: rgb(74, 89, 164);
+      --third-color: rgb(54, 69, 144);
+    }
+    80% {
+      --main-color: rgb(158, 76, 149);
+      --second-color: rgb(138, 56, 129);
+      --third-color: rgb(118, 36, 109);
+    }
+    90% {
+      --main-color: rgb(135, 58, 97);
+      --second-color: rgb(115, 38, 77);
+      --third-color: rgb(95, 18, 57);
+    }
+  }
 }
