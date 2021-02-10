@@ -49,10 +49,6 @@ section.content-container {
   width: 95%;
 }
 
-*[class*="to-change_"] {
-  transition: 0.2s ease-in;
-}
-
 @media (min-width: 1024px) {
   .narrow-container {
     width: 1024px;
