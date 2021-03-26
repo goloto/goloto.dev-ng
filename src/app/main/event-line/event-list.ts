@@ -11,7 +11,7 @@ export const EVENTS: Event[] = [
     },
     description: {
       top: "Working for <a href='https://nordavind.ru/' target='_blank'>Nordavind</a>",
-      bottom: "JS • Electron • Lodash • SVN • Redmine • Jenkins • Python"
+      bottom: "JS • Node.js • Electron • Lodash • SVN • Redmine • Jenkins • Python"
     }
   }, {
     type: 'tech',
