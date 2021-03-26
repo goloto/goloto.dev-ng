@@ -32,7 +32,7 @@ export const EVENTS: Event[] = [
       end: "2020"
     },
     description: {
-      top: "Working for <a href='https://www.redbee.ru/' target='_blank'>Redbee</a>",
+      top: "Worked for <a href='https://www.redbee.ru/' target='_blank'>Redbee</a>",
       bottom: "JS • PHP • Bitrix • Laravel • CSS • HTML • Git"
     }
   }, {
