@@ -9,10 +9,7 @@ Old version available [here](https://github.com/goloto/goloto.dev).
 
 ## Technologies
 
-To create this website I use:
-* node.js
-* Pug
-* SCSS
+To create this app I use **Angular**.
 
 ## Features
 
