@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PROJECTS } from "../project-list";
+import { RedbeeProjects } from "../redbee-projects";
 
 @Component({
   selector: 'app-portfolio',
@@ -7,7 +7,7 @@ import { PROJECTS } from "../project-list";
   styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent implements OnInit {
-  projects = PROJECTS;
+  projects = RedbeeProjects;
 
   constructor() { }
 
